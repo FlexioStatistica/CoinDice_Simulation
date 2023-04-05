@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aadd66a-0aee-407b-bcd8-a204796bf502" name="Default Changelist" comment="" />
+    <list default="true" id="3aadd66a-0aee-407b-bcd8-a204796bf502" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2NlmRGSDq6hUxt3RAHkBHhcXAor" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -45,7 +51,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1680247032890</updated>
-      <workItem from="1680247036802" duration="1997000" />
+      <workItem from="1680247036802" duration="2685000" />
+      <workItem from="1680294367980" duration="5119000" />
+      <workItem from="1680678020677" duration="1256000" />
     </task>
     <servers />
   </component>
@@ -53,9 +61,14 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1966" y="-38" width="700" height="530" key="recent.locations.popup" timestamp="1680248752322">
+    <state x="1899" y="-11" key="com.intellij.ide.util.TipDialog" timestamp="1680678075920">
       <screen x="1366" y="-304" width="1920" height="1080" />
     </state>
-    <state x="1966" y="-38" width="700" height="530" key="recent.locations.popup/0.0.1366.768/1366.-304.1920.1080@1366.-304.1920.1080" timestamp="1680248752322" />
+    <state x="379" y="208" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.-304.1920.1080@0.0.1366.768" timestamp="1680312145673" />
+    <state x="1899" y="-11" key="com.intellij.ide.util.TipDialog/0.0.1366.768/1366.-304.1920.1080@1366.-304.1920.1080" timestamp="1680678075920" />
+    <state x="1966" y="-38" width="700" height="530" key="recent.locations.popup" timestamp="1680325491233">
+      <screen x="1366" y="-304" width="1920" height="1080" />
+    </state>
+    <state x="1966" y="-38" width="700" height="530" key="recent.locations.popup/0.0.1366.768/1366.-304.1920.1080@1366.-304.1920.1080" timestamp="1680325491233" />
   </component>
 </project>

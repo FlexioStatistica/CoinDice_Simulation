@@ -1,5 +1,7 @@
 package com.company;
 import java.util.Random;
+import java.util.Scanner;
+
 /*
 Coin Flipping and Dice tossing Simulation Experiment.
 
@@ -15,15 +17,22 @@ In an formal applied math probability course, if a fair two sided die is tossed,
 
  For example, a fair 10-sided die would have an even statistical results for each side of approximately 10% for each side.
 
+website referece: https://www.tutorialspoint.com/java-program-to-toss-a-coin
+
 */
+
+//testing changes in code
 
 
 public class Main {
-//Coin
+
+    public static int trials = 0;
+    //Coin
     private int result;
     private int heads = 0;
     private int tails = 1;
-// Dice
+    public static int face= 0;
+    // Dice
 
 
     //Coin Method
@@ -31,6 +40,18 @@ public class Main {
     {
         int num = 0;
         Random ranNum = new Random();
+
+        for(int i=1; i<= trials;i++)
+        {
+            if()
+            {}
+            else
+            {
+                //count tails
+
+            }
+        }
+
         return num;
     }
 
@@ -51,7 +72,37 @@ public class Main {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
+        System.out.println("Welcome to the Coin-Dice Simulation.");
+        System.out.println();
+        System.out.println("Please enter the number of faces for this fair die simulation.");
+        System.out.println("[Note: A value of 2 would be considered a coin. less tha one will not be considered.");
+
+        Scanner faceNumber = new Scanner(System.in);
+        face = faceNumber.nextInt();
+        //TODO: write in code in case value entered is whole a whole interger. There should be a fail-safe here.
+
+        System.out.println();
+        System.out.println("Recognized: " + face + "for this face-value." );
+        System.out.println("Please enter the number of trials for this simulation.");
+
+        Scanner trialsInput = new Scanner(System.in);
+        trials = trialsInput.nextInt();
+
+        System.out.println("Recognized: " + trials + "for this trial-value." );
+        System.out.println();
+
+        //TODO: Write series of if-else conditions to move to coin flipping, dice rolling, or other here.
+
+
+
+        System.out.println("Here are the results of this simulation.");
+        System.out.println("Coin Simulation");
+        System.out.println();
+        System.out.println("Number of Trials: ");
+        System.out.println("Head Proportion: ");
+        System.out.println("Tail Proportion: ");
 	// write your code here
     }
 }
