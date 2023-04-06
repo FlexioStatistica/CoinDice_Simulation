@@ -27,6 +27,7 @@ website referece: https://www.tutorialspoint.com/java-program-to-toss-a-coin
 public class Main {
 
     public static int trials = 0;
+    public static int numberFace = 0;
     //Coin
     private int result;
     private int heads = 0;
@@ -38,8 +39,11 @@ public class Main {
     //Coin Method
     public static int coinFlip(int number)
     {
+        int n = numberFace;
         int num = 0;
-        Random ranNum = new Random();
+        Random ranNum = new Random(n);
+        int flipChance = ranNum.n;
+        
 
         for(int i=1; i<= trials;i++)
         {
