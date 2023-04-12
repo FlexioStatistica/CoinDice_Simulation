@@ -37,23 +37,31 @@ public class Main {
 
 
     //Coin Method
-    public static int coinFlip(int number)
+    public static int coinFlip(int numberFlip, int trialsFlip)
     {
-        int n = numberFace;
+        int n = numberFlip;
         int num = 0;
+        int counterTails = 0;
+        int counterHeads = 0;
         Random ranNum = new Random(n);
         int flipChance = ranNum.n;
-        
 
-        for(int i=1; i<= trials;i++)
+
+        for(int i=1; i<= trialsFlip;i++)
         {
+
             if()
-            {}
+            {
+                counterHeads++;
+                this.heads = counterHeads;
+            }
             else
             {
                 //count tails
-
+                counterTails++;
+                this.tails = counterTails;
             }
+            // Note values returns are sent to publ;ioc static values.
         }
 
         return num;
@@ -85,7 +93,7 @@ public class Main {
 
         Scanner faceNumber = new Scanner(System.in);
         face = faceNumber.nextInt();
-        //TODO: write in code in case value entered is whole a whole interger. There should be a fail-safe here.
+        //TODO: write in code in case value entered is whole a whole interger. There should be a fail-safe here. Recall the while loop.
 
         System.out.println();
         System.out.println("Recognized: " + face + "for this face-value." );
@@ -99,14 +107,25 @@ public class Main {
 
         //TODO: Write series of if-else conditions to move to coin flipping, dice rolling, or other here.
 
+        if(face = 2)
+        {
+            System.out.println("Here are the results of this simulation.");
+            System.out.println("Coin Simulation");
+            System.out.println();
+            System.out.println("Number of Trials: ");
+            System.out.println("Head Proportion: ");
+            System.out.println("Tail Proportion: ");
+        }
+        else if(face >= 2 )
+        {
+            //TODO add the method for a multi face dice simulation
+        }
+        else
+        {
+            System.out.println("Value Error. Check Code. Terminating Code.");
+            exit();
+        }
 
-
-        System.out.println("Here are the results of this simulation.");
-        System.out.println("Coin Simulation");
-        System.out.println();
-        System.out.println("Number of Trials: ");
-        System.out.println("Head Proportion: ");
-        System.out.println("Tail Proportion: ");
 	// write your code here
     }
 }
