@@ -70,6 +70,11 @@ public class Main {
     //Dice Method
     public static int dice(int number, int face)
     {
+
+        Random ranNum = new Random(n);
+
+        //TODO: This n-sided dice has to account for an unknown number of sides. Review recursion methods from intro to data structures textbook.
+
         int resultDice = 0;
         if(face >2)
         {
@@ -109,7 +114,8 @@ public class Main {
 
         if(face = 2)
         {
-            System.out.println("Here are the results of this simulation.");
+            //Call coinFlip Method
+            System.out.println("Here are the results of this Coin simulation.");
             System.out.println("Coin Simulation");
             System.out.println();
             System.out.println("Number of Trials: ");
@@ -118,7 +124,9 @@ public class Main {
         }
         else if(face >= 2 )
         {
+
             //TODO add the method for a multi face dice simulation
+            System.out.println("Here are the results of this " + numberFace + "-sided Dice simulation.");
         }
         else
         {
@@ -127,5 +135,6 @@ public class Main {
         }
 
 	// write your code here
+    // TODO: Consider pulling some discrete probability distributions simulations as well.
     }
 }
