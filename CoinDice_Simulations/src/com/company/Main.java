@@ -88,6 +88,28 @@ public class Main {
         return resultDice;
     }
 
+    /*
+    Experimental Recursion method
+
+    The goal is to creat a recursion method to callk itself. The dice method would call this, create a series of face n-sded dicem,
+    matchign respective counter per each side, toss the die, and recult the results.
+
+     */
+
+    public static int counterRecursion(int n)
+    {
+        this.n = face;
+        //toss die
+        //record results with a ounter
+
+        int counter = 0;
+
+
+
+    }
+
+
+
 
     public static void main(String[] args)
     {
