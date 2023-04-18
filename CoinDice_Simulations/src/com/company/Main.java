@@ -72,13 +72,18 @@ public class Main {
     {
 
         Random ranNum = new Random(n);
-
+        // This array list is meant to hold all new counter-objects populated based on how many faces this dice will have.
+        ArrayList<Integer> countFaces = new ArrayList<Integer>(n);
         //TODO: This n-sided dice has to account for an unknown number of sides. Review recursion methods from intro to data structures textbook.
 
         int resultDice = 0;
         if(face >2)
         {
-            for()
+            for(int i; i < this.n; i++)
+            {
+                new counter[i];
+                countFaces.add(new counter[i]);
+            }
         }
         else
         {
