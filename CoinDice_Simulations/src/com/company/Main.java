@@ -68,29 +68,43 @@ public class Main {
     }
 
     //Dice Method
-    public static int dice(int number, int face)
-    {
+    //Consult webiste: https://math.hws.edu/eck/cs124/javanotes4/c5/ex-5-1-answer.html
+    //TODO: revise dice method
+    public static void dice() {
 
         Random ranNum = new Random(n);
         // This array list is meant to hold all new counter-objects populated based on how many faces this dice will have.
         ArrayList<Integer> countFaces = new ArrayList<Integer>(n);
         //TODO: This n-sided dice has to account for an unknown number of sides. Review recursion methods from intro to data structures textbook.
 
-        int resultDice = 0;
-        if(face >2)
-        {
-            for(int i; i < this.n; i++)
-            {
+        int resultDice;
+        if (face > 2) {
+            for (int i; i < this.n; i++) {
                 new counter[i];
                 countFaces.add(new counter[i]);
             }
         }
-        else
-        {
+        else {
             System.out.println("The number of faces for this die is 2 or less. Try Coin toss method. Exit. ");
         }
 
-        return resultDice;
+        //Method to roll die
+        public void roll ()
+        {
+            resultDice = ranNum.nextInt()+1;
+
+            //TODO: retrive the matching counter from array list. Tally value based on rolled die. Then return the counter object to arraylist!
+            counter[resultDice] ++;
+        }
+
+        //Get Method for die
+
+        public int getDie()
+        {
+            return resultDice;
+        }
+
+       //return resultDice;
     }
 
     /*
