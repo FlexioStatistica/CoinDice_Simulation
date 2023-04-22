@@ -75,6 +75,7 @@ public class Main {
         Random ranNum = new Random(n);
         // This array list is meant to hold all new counter-objects populated based on how many faces this dice will have.
         ArrayList<Integer> countFaces = new ArrayList<Integer>(n);
+        //Recall that ArrayList starts counteing at place 0 then so on
         //TODO: This n-sided dice has to account for an unknown number of sides. Review recursion methods from intro to data structures textbook.
 
         int resultDice;
@@ -89,12 +90,24 @@ public class Main {
         }
 
         //Method to roll die
+        // Website reference: https://www.javacodegeeks.com/2022/01/java-arraylist-insert-replace-at-index.html#:~:text=To%20update%20or%20replace%20the,the%20index%20and%20new%20value.&text=From%20the%20output%2C%20we%20can%20see%20that%20index%203%20value,the%20list%20size%20is%20unchanged.
         public void roll ()
         {
             resultDice = ranNum.nextInt()+1;
 
             //TODO: retrive the matching counter from array list. Tally value based on rolled die. Then return the counter object to arraylist!
-            counter[resultDice] ++;
+          for(int index = 0; index < countFacessize(); index++>)
+          {
+              if (countFaces.get(index) == counter[resultDice])
+              {
+                  //double check this
+                  countFaces.set(i-1,counter[resultDice] ++ );
+              }
+          }
+
+
+           //countFaces.set(i, )
+            //counter[resultDice] ++;
         }
 
         //Get Method for die
