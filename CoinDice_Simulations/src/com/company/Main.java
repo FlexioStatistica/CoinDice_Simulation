@@ -94,17 +94,19 @@ public class Main {
         public void roll ()
         {
             resultDice = ranNum.nextInt()+1;
-
+            //rethink this
             //TODO: retrive the matching counter from array list. Tally value based on rolled die. Then return the counter object to arraylist!
           for(int index = 0; index < countFacessize(); index++>)
           {
               if (countFaces.get(index) == counter[resultDice])
               {
                   //double check this
+                  if(i)
+
                   countFaces.set(i-1,counter[resultDice] ++ );
               }
           }
-
+            return resultDice;
 
            //countFaces.set(i, )
             //counter[resultDice] ++;
