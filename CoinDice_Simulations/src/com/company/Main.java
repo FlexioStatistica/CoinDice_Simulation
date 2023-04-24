@@ -80,8 +80,8 @@ public class Main {
 
         int resultDice;
         if (face > 2) {
-            for (int i; i < this.n; i++) {
-                new counter[i];
+            for (int i = 0; i < this.n; i++) {
+                new int counter[i] = 0;
                 countFaces.add(new counter[i]);
             }
         }
@@ -94,25 +94,7 @@ public class Main {
         public void roll ()
         {
             resultDice = ranNum.nextInt()+1;
-            //rethink this
-            //TODO: retrive the matching counter from array list. Tally value based on rolled die. Then return the counter object to arraylist!
-          for(int index = 0; index < countFacessize(); index++>)
-          {
-              if (countFaces.get(index) == counter[resultDice])
-              {
-                  //double check this
-                  if(i)
-
-                  countFaces.set(i-1,counter[resultDice] ++ );
-              }
-          }
-            return resultDice;
-
-           //countFaces.set(i, )
-            //counter[resultDice] ++;
-        }
-
-        //Get Method for die
+            //Keep it simple
 
         public int getDie()
         {
@@ -130,14 +112,28 @@ public class Main {
 
      */
 
-    public static int counterRecursion(int n)
+    public static int counterSimulation(int simulations)
     {
-        this.n = face;
+        int sim =  simulations;
+        int toss = 0;
         //toss die
         //record results with a ounter
 
-        int counter = 0;
+        for(int index = 0; index <= sim; index++>)
+        {
+            dice.roll();
+            toss = dice.getDie();
 
+            if (toss == counter[toss])
+            {
+                countFaces.set(i,counter[toss] ++ );
+            }
+        }
+
+
+        //countFaces.set(i, )
+        //counter[resultDice] ++;
+    }
 
 
     }
