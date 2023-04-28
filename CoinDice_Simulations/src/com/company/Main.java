@@ -116,6 +116,7 @@ public class Main {
     {
         int sim =  simulations;
         int toss = 0;
+        int tempValue = 0;
         //toss die
         //record results with a ounter
 
@@ -126,7 +127,13 @@ public class Main {
 
             if (toss == counter[toss])
             {
-                countFaces.set(i,counter[toss] ++ );
+                //call array list
+                //TODO check website about incrementing mutable values in array list
+                //https://stackoverflow.com/questions/27205268/best-way-to-increment-integer-in-arraylist-in-java#:~:text=You%20can't%20increment%20the,value%20in%20that%20same%20position.&text=Alternatively%2C%20use%20a%20mutable%20integer,(or%20write%20your%20own).
+                tempValue = countFaces.get(toss);
+                tempValue ++;
+                countFaces.set(i,tempValue );
+                //countFaces.set(i,counter[toss] ++ );
             }
         }
 
