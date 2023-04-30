@@ -1,6 +1,7 @@
 package com.company;
 import java.util.Random;
 import java.util.Scanner;
+import  java.util.ArrayList;
 
 /*
 Coin Flipping and Dice tossing Simulation Experiment.
@@ -34,6 +35,8 @@ public class Main {
     private int tails = 1;
     public static int face= 0;
     // Dice
+    ArrayList<Integer> countFaces = new ArrayList<Integer>(n);
+    ArrayList<Double> PMF = new ArrayList<Integer>(n);
 
 
     //Coin Method
@@ -70,11 +73,12 @@ public class Main {
     //Dice Method
     //Consult webiste: https://math.hws.edu/eck/cs124/javanotes4/c5/ex-5-1-answer.html
     //TODO: revise dice method
-    public static void dice() {
+    public static void dice()
+    {
 
         Random ranNum = new Random(n);
         // This array list is meant to hold all new counter-objects populated based on how many faces this dice will have.
-        ArrayList<Integer> countFaces = new ArrayList<Integer>(n);
+        //ArrayList<Integer> countFaces = new ArrayList<Integer>(n);
         //Recall that ArrayList starts counteing at place 0 then so on
         //TODO: This n-sided dice has to account for an unknown number of sides. Review recursion methods from intro to data structures textbook.
 
@@ -142,6 +146,22 @@ public class Main {
         //counter[resultDice] ++;
     }
 
+    // Method to calculate probabiity results.
+    public static int PMF_dice()
+    {
+        int tempProp = 0;
+        double tempCalc = 0;
+
+        for(int index = 0; index <= trials; index++>)
+        {
+            tempProp = PMF.get(index);
+            tempCalc = tempProp/Trials;
+            PMF.set(index, tempCalc);
+        }
+    }
+
+
+
 
     }
 
@@ -186,6 +206,10 @@ public class Main {
 
             //TODO add the method for a multi face dice simulation
             System.out.println("Here are the results of this " + numberFace + "-sided Dice simulation.");
+            //call simulation method
+            counterSimulation(face);
+
+
         }
         else
         {
