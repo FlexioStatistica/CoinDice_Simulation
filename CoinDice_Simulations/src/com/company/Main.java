@@ -163,13 +163,12 @@ public class Main {
 
 
 
-    }
-
-
-
 
     public static void main(String[] args)
     {
+        int indexTemp = 0;
+
+
         System.out.println("Welcome to the Coin-Dice Simulation.");
         System.out.println();
         System.out.println("Please enter the number of faces for this fair die simulation.");
@@ -208,6 +207,15 @@ public class Main {
             System.out.println("Here are the results of this " + numberFace + "-sided Dice simulation.");
             //call simulation method
             counterSimulation(face);
+            //Print Results
+            System.out.println();
+            System.out.println("For a " + numberFace + "-sided die tossed " + trials + " times. We have the following:");
+            for(int index = 0; index <= trials; index++>)
+            {
+                indexTemp = index + 1;
+                System.out.println("Lands on " + indexTemp + " : " + PMF.get(index) + "% ");
+
+            }
 
 
         }
